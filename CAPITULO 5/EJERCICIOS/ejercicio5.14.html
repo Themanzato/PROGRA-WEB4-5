@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Transformación con :hover</title>
+    <style type="text/css">
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 200px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="santi.jfif" alt="Imagen 1">
+        <img src="edson.jfif" alt="Imagen 2">
+        <img src="chaco.jfif"Imagen 3">
+        <img src="messi.jfif" alt="Imagen 4">
+    </div>
+</body>
+</html>

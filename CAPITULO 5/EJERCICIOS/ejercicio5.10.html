@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Inclinación Alternada</title>
+    <style type="text/css">
+        img {
+            width: 176px;
+            height: 100px;
+            -webkit-transition: -webkit-transform 4s;
+            -moz-transition: -moz-transform 4s;
+            -o-transition: -o-transform 4s;
+            transition: transform 4s;
+            -webkit-transform-origin: center center;
+            transform-origin: center center;
+        }
+
+        img:hover {
+            -webkit-animation: inclinacion 4s infinite alternate;
+            -moz-animation: inclinacion 4s infinite alternate;
+            -o-animation: inclinacion 4s infinite alternate;
+            animation: inclinacion 4s infinite alternate;
+        }
+
+        @keyframes inclinacion {
+            0%, 100% {
+                transform: rotate(30deg);
+            }
+            50% {
+                transform: rotate(-30deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="cpphttp.png" alt="Portada del libro C++ How to Program">
+</body>
+</html>

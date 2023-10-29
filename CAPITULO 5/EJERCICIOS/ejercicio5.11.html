@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fusión de Imágenes</title>
+    <style type="text/css">
+        #portada {
+            position: relative;
+            margin: 0 auto;
+            width: 400px;
+            height: 267px;
+            overflow: hidden;
+        }
+        #portada img {
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            -webkit-transition: opacity 3s linear;
+            transition: opacity 3s linear;
+        }
+        #portada img:nth-child(1) {
+            animation: fadeIn 3s ease-in-out forwards;
+        }
+        #portada img:nth-child(2) {
+            animation: fadeIn 3s ease-in-out 3s forwards;
+        }
+        #portada img:nth-child(3) {
+            animation: fadeIn 3s ease-in-out 6s forwards;
+        }
+        #portada img:nth-child(4) {
+            animation: fadeIn 3s ease-in-out 9s forwards;
+        }
+        #portada img:nth-child(5) {
+            animation: fadeIn 3s ease-in-out 12s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="portada">
+        <img src="f170.png" alt="Imagen 1">
+        <img src="f190.png" alt="Imagen 2">
+        <img src="f120.png" alt="Imagen 3">
+        <img src="f110.png" alt="Imagen 4">
+        <img src="f122.png" alt="Imagen 5">
+    </div>
+</body>
+</html>
